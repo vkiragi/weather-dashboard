@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="weather-app" class="weather-app">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Enter city name..." />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <!-- Main Weather Card -->
+      <div class="card main-weather">
+        <div class="weather-location">Telluride, CO, USA</div>
+        <div class="weather-temperature">13°C</div>
+        <div class="weather-date-time">Sunset Time, Monday 7:50 pm</div>
+      </div>
+
+      <!-- Details Cards Container -->
+      <div class="details-cards-container">
+        <!-- Humidity Card -->
+        <div class="card detail-card">
+          <div class="detail-title">Humidity</div>
+          <div class="detail-value">39%</div>
+        </div>
+
+        <!-- Sunset Card -->
+        <div class="card detail-card">
+          <div class="detail-title">Sunset</div>
+          <div class="detail-value">7:50 pm</div>
+        </div>
+
+        <!-- UV Index Card -->
+        <div class="card detail-card">
+          <div class="detail-title">UV Index</div>
+          <div class="detail-value">0 of 10</div>
+        </div>
+
+        <!-- Sunrise Card -->
+        <div class="card detail-card">
+          <div class="detail-title">Sunrise</div>
+          <div class="detail-value">6:35 pm</div>
+        </div>
+      </div>
+
+      <!-- 5-Day Forecast Card -->
+      <div class="card forecast-card">
+        <div class="forecast-title">5-Day Forecast</div>
+        <div class="forecast-container">
+          <!-- Day 1 -->
+          <div class="forecast-day">
+            <div class="day-name">Mon</div>
+            <div class="day-temperature">13°C</div>
+            <div class="weather-icon">☀️</div>
+          </div>
+          <!-- Repeat for each day... -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
